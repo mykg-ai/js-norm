@@ -7,9 +7,11 @@
 ?> _引自《阿里规约》的开头片段：_<br/><br/>
 现代软件架构的复杂性需要协同开发完成，如何高效地协同呢？无规矩不成方圆，无规范难以协同，比如，制订交通法规表面上是要限制行车权，实际上是保障公众的人身安全，试想如果没有限速，没有红绿灯，谁还敢上路行驶。对软件来说，适当的规范和标准绝不是消灭代码内容的创造性、优雅性，而是限制过度个性化，以一种普遍认可的统一方式一起做事，提升协作效率，降低沟通成本。代码的字里行间流淌的是软件系统的血液，质量的提升是尽可能少踩坑，杜绝踩重复的坑，切实提升系统稳定性，码出质量。
 
-本文中将涉及到多种命名方式。参考[《Medium - Case Styles》](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841)这篇文章中的命名，本文将使用`小驼峰`或`驼峰`指代camelCase，`大驼峰`指代PascalCase，`蛇形`指代snake_case，`大蛇形`指代SNAKE_CASE_ALL_CAP，`肉串`指代kebab-case。
+心有猛虎，细嗅蔷薇。虽然身为晨兴夜寐的打工人，猫牙的开发者们也在不断追求着设计开发的三大境界：**健全(robust)** 、**弹性(elastic)** 、**优雅(elegant)** 。为了极大化把控软件质量以及提高内部人员的综合素质，在经历了多个项目的协作打磨完善后，猫牙技术团队基于「传递信息的有效性，文字大于口述」的理念撰写了此文。
 
 猫牙一项坚持✊ **约定大于配置(convention over configuration)** 的编码风格，以及 **声明式大于命令式(declarative over imperative)** 的设计风格。本文依据约束力的强弱，将规约的等级分为<i class='must'></i>、<i class='should'></i>、<i class='better'></i>三类，其中强制需要落实到项目中去，并应当作为code review的参考依据。
+
+本文中将涉及到多种命名方式。参考[《Medium - Case Styles》](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841)这篇文章中的命名，本文将使用`小驼峰`或`驼峰`指代camelCase，`大驼峰`指代PascalCase，`蛇形`指代snake_case，`大蛇形`指代SNAKE_CASE_ALL_CAP，`肉串`指代kebab-case。
 
 ## 一、基础规范
 
@@ -300,65 +302,6 @@ $default-text-color: #333;
 
 反例：save() / open() / show() / go()
 
-附： 函数方法常用的动词:
-
--|-
--|-
-get 获取 | set 设置
-add 增加 | delete 删除
-create 创建 | destory 移除
-start 启动 | stop 停止
-open 打开 | close 关闭
-read 读取 | write 写入
-load 载入 | save 保存
-create 创建 | destroy 销毁
-begin 开始 | end 结束
-backup 备份 | restore 恢复
-import 导入 | export 导出
-split 分割 | merge 合并
-inject 注入 | extract 提取
-attach 附着 | detach 脱离
-bind 绑定 | separate 分离
-view 查看 | browse 浏览
-edit 编辑 | modify 修改
-select 选取 | mark 标记
-copy 复制 | paste 粘贴
-undo 撤销 | redo 重做
-insert 插入 | delete 移除
-add 加入 | append 添加
-clean 清理 | clear 清除
-index 索引 | sort 排序
-find 查找 | search 搜索
-increase 增加 | decrease 减少
-play 播放 | pause 暂停
-launch 启动 | run 运行
-compile 编译 | execute 执行
-debug 调试 | trace 跟踪
-observe 观察 | listen 监听
-build 构建 | publish 发布
-input 输入 | output 输出
-encode 编码 | decode 解码
-encrypt 加密 | decrypt 解密,
-compress 压缩 | decompress 解压缩
-pack 打包 | unpack 解包
-parse 解析 | emit 生成
-connect 连接 | disconnect 断开
-send 发送 | receive 接收
-download 下载 | upload 上传
-refresh 刷新 | synchronize 同步
-update 更新 | revert 复原
-lock 锁定 | unlock 解锁
-check out 签出 | check in 签入
-submit 提交 | commit 交付
-push 推 | pull 拉
-expand 展开 | collapse 折叠
-begin 起始 | end 结束
-start 开始 | finish 完成
-enter 进入 | exit 退出
-abort 放弃 | quit 离开
-obsolete 废弃 | depreciate 废旧
-collect 收集 | aggregate 聚集
-
 > <i class='must'></i>行尾不要添加`;`。
 
 正例：
@@ -592,3 +535,64 @@ console.log(studentList)
 ### 2.3 其他
 
 > <i class='better'></i>所有命名尽量与后端命名统一。
+
+## 三、附录
+
+### 3.1 函数方法常用的动词
+
+-|-
+-|-
+get 获取 | set 设置
+add 增加 | delete 删除
+create 创建 | destory 移除
+start 启动 | stop 停止
+open 打开 | close 关闭
+read 读取 | write 写入
+load 载入 | save 保存
+create 创建 | destroy 销毁
+begin 开始 | end 结束
+backup 备份 | restore 恢复
+import 导入 | export 导出
+split 分割 | merge 合并
+inject 注入 | extract 提取
+attach 附着 | detach 脱离
+bind 绑定 | separate 分离
+view 查看 | browse 浏览
+edit 编辑 | modify 修改
+select 选取 | mark 标记
+copy 复制 | paste 粘贴
+undo 撤销 | redo 重做
+insert 插入 | delete 移除
+add 加入 | append 添加
+clean 清理 | clear 清除
+index 索引 | sort 排序
+find 查找 | search 搜索
+increase 增加 | decrease 减少
+play 播放 | pause 暂停
+launch 启动 | run 运行
+compile 编译 | execute 执行
+debug 调试 | trace 跟踪
+observe 观察 | listen 监听
+build 构建 | publish 发布
+input 输入 | output 输出
+encode 编码 | decode 解码
+encrypt 加密 | decrypt 解密,
+compress 压缩 | decompress 解压缩
+pack 打包 | unpack 解包
+parse 解析 | emit 生成
+connect 连接 | disconnect 断开
+send 发送 | receive 接收
+download 下载 | upload 上传
+refresh 刷新 | synchronize 同步
+update 更新 | revert 复原
+lock 锁定 | unlock 解锁
+check out 签出 | check in 签入
+submit 提交 | commit 交付
+push 推 | pull 拉
+expand 展开 | collapse 折叠
+begin 起始 | end 结束
+start 开始 | finish 完成
+enter 进入 | exit 退出
+abort 放弃 | quit 离开
+obsolete 废弃 | depreciate 废旧
+collect 收集 | aggregate 聚集
