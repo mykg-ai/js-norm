@@ -1,0 +1,31 @@
+/* special text */
+i.must {
+  color: red;
+  font-style: normal;
+}
+i.must::after {
+  content: '【强制】';
+}
+i.should {
+  color: #FF00FF;
+  font-style: normal;
+}
+i.should::after {
+  content: '【推荐】';
+}
+i.better {
+  color: #FF82AB;
+  font-style: normal;
+}
+i.better::after {
+  content: '【参考】';
+}
+i.tab {
+  margin-left: 20px;
+}
+/* special paragraph */
+em.notice {
+  text-indent: -2em;
+  padding-left: 2em;
+  display: block;
+}
