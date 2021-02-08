@@ -1,5 +1,7 @@
 #
 
+https://js-norm.mykg.ai
+
 ## Reference
 
 - [docsify](https://docsify.js.org/#/quickstart)
@@ -8,6 +10,14 @@
 ## User Guide
 
 ### how to contribute
+
+```shell
+# download from gitlab
+$ git clone ssh://git@gitlab.mykg.tech:2224/mykg/genius/js-norm.git
+
+# add github remote
+$ git remote add github git@github.com:mykg-ai/js-norm.git
+```
 
 ### how to serve in local
 
@@ -26,10 +36,7 @@ $ serve -s html
 ### how to deploy
 
 ```shell
-# login server: https://gitlab.mykg.tech/mykg/genius/init/-/wikis/%E5%BC%80%E5%8F%91%E6%9C%BA%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B
-$ ssh mykg
-
-$ cd ~/data/docker-compose/js-norm && git pull
+$ sh release.sh
 ```
 
 Copyright &copy; 2019-2021 [MYKG](http://www.mykg.ai) & [LonelyReader](http://www.lonelyreader.com) All Rights Reserved.

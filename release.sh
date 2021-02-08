@@ -1,3 +1,4 @@
 git add .
 git commit -m 'update'
-git push
+git push -u origin master:master
+git push -u github main
