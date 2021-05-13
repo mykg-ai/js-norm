@@ -24,13 +24,13 @@ $ git remote add github git@github.com:mykg-ai/js-norm.git
 [1] use docsify
 
 ```shell script
-$ docsify serve html
+$ docsify serve docs
 ```
 
 [2] use serve
 
 ```shell script
-$ serve -s html
+$ serve -s docs
 ```
 
 ### how to deploy
